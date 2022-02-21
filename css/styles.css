@@ -1,0 +1,119 @@
+:root {
+  --color-primary: #3c096c;
+  --color-primary-dark: #240046;
+  --color-primary-light: #dbcdf0;
+  --color-light-grey: #f4f4f4;
+  --color-dark-grey: #3a3535;
+  --color-dark-black: #232020;
+
+  --font-heading: "MonteCarlo", cursive;
+  --font-content: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*this is so that 1rem = 10px  10px/16px = 62.5%  16px is the browser default*/
+}
+
+/**********************************Text***************************************************/
+/*
+    font-family: 'MonteCarlo', cursive;
+
+    font-family: 'Roboto', sans-serif;
+*/
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+/**********************************Header***************************************************/
+
+header {
+  height: 200px;
+  width: 100%;
+  background-color: var(--color-primary);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-light-grey);
+  font-family: var(--font-heading);
+}
+
+/**********************************Picture***************************************************/
+
+.picture {
+  background-color: var(--color-primary-light);
+  padding: 90px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headShot {
+  width: 300px;
+  border: 10px solid var(--color-light-grey);
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+/**********************************Bio***************************************************/
+
+.bio {
+  height: 500px;
+  background-color: var(--color-primary-dark);
+  padding: 30px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bio_audio {
+  padding-left: 80px;
+  padding-top: 150px;
+}
+
+.bio_audio_title {
+  color: var(--color-light-grey);
+  font-family: var(--font-heading);
+}
+
+.bio_content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  /*justify-content: space-evenly;*/
+
+  width: 580px;
+  color: var(--color-light-grey);
+}
+
+.bio_content_title {
+  font-family: var(--font-heading);
+}
+
+.bio_content_paragraphs {
+  font-family: var(--font-content);
+}
